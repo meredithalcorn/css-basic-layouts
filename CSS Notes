@@ -39,7 +39,7 @@ It's easier to complete a mobile layout when you're first starting out working o
 A mobile first layout approach the basic layout styles and minimum code are used to create content, and add media queries.
 
 ------------------------------------------------------------------------------------------------
-HOW TO KEEP THE FOOTER AT THE BOTTOM OF THE PAGE AT ALL TIMES, AND....
+HOW TO KEEP THE FOOTER AT THE BOTTOM OF THE PAGE AT ALL TIMES,
 ------------------------------------------------------------------------------------------------
 
 "A STICKY footer" -- a footer that sticks to the bottom of the page regardless of the amount of content on the page.
@@ -57,3 +57,18 @@ The "calc" function that performs calculations and returns a result.  Simple cal
 The footer now sticks to the page!
 
 https://snook.ca/archives/html_and_css/vm-vh-units
+
+CONTROLLING LAYOUTS
+--------------------------------------------------------------------
+
+POSITIONING ELEMENTS SIDE BY SIDE WITH INLINE DISPLAY
+
+--------------------------------------------------------------------
+
+Every element is a rectangular box that is either block level (that stack on top of each other and aren't side by side on the same line.), or in line elements.  A browser displays block elements them as a single block of content with a break before and after it.
+
+In line elements like images links and span tags do not create line breaks in a layout.  They appear on the same line as the elements and content beside them.
+--They naturally expand to fill their parent container div.
+
+We will now learn how to change the default behaviors of elements.
+--list items to appear side by side, for example. First we wills tart with in-line elements 
