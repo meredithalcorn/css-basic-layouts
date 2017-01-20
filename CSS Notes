@@ -1,0 +1,59 @@
+Wrapper is used to center layout on a page.  This is also called a "container"
+Describes a layout within certain boundaries and centers it on the page
+
+- You can use either your body or the div as the wrapper.  It makes it easier to place content outside of the wrapper by using a div.
+
+-set margin to 0
+
+- It is common to use more than one container - one for main header, and one for the body
+main header and main footer should typically take up the full width of the page
+
+- Looks nice when the container's width (with the body content) is set to 70%
+
+MOBILE FIRST LAYOUT APPROACH
+-----------------------------------------------------------------------
+Basic example of media-query
+
+building layout UP (min-width) from narrow screens to wider screens:
+
+@media (min-width: 769px) {
+          .container {
+                 width: 70%;
+                 max-width: 1000px;
+                 margin: 0 auto;
+           }
+}
+
+//Only devices that are 769px and wider will load the CSS inside of this media query
+-------------------------------------------------------------------------
+
+* {
+box-sizing: border box;
+}
+//Forces padding and borders into the width and height of the element, without expanding them
+//The * is a universal selector that effects every element
+
+
+It's easier to complete a mobile layout when you're first starting out working on a project.
+
+A mobile first layout approach the basic layout styles and minimum code are used to create content, and add media queries.
+
+------------------------------------------------------------------------------------------------
+HOW TO KEEP THE FOOTER AT THE BOTTOM OF THE PAGE AT ALL TIMES, AND....
+------------------------------------------------------------------------------------------------
+
+"A STICKY footer" -- a footer that sticks to the bottom of the page regardless of the amount of content on the page.
+
+Wrap the main header, and container div with another div (right before the footer's opening tag)
+
+We put the styling for this wrapper inside of the media query
+
+The "min-height" property sets the minimum height a property can be.
+VH is a viewport relative element. It allows sizing purely on the height of the browser viewport.
+1 vh is equal to 1/100th the height of the viewport browser.  100 VH means the min-height will be 100% of the viewport height.
+
+The "calc" function that performs calculations and returns a result.  Simple calculations that add, subtract, and multiply values in CSS.
+
+The footer now sticks to the page!
+
+https://snook.ca/archives/html_and_css/vm-vh-units
